@@ -8,13 +8,17 @@
     "verified": "10",
     "maximum": "10"
   },
-  "url": "https://github.com/foundryvtt/dnd5e/",
-  "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
-  "download": "https://github.com/foundryvtt/dnd5e/releases/download/release-2.0.3/dnd5e-release-2.0.3.zip",
+  "url": "https://github.com/Knack25/Dnd5e-Modded",
+  "manifest": "https://raw.githubusercontent.com/Knack25/Dnd5e-Modded/main/system.json",
+  "download": "https://github.com/Knack25/Dnd5e-Modded/archive/refs/heads/main.zip",
   "authors": [
     {
       "name": "Atropos",
       "url": "https://foundryvtt.com"
+    },
+    {
+      "name": "Knack25",
+      "url": "https://github.com/Knack25/"
     }
   ],
   "scripts": [],
