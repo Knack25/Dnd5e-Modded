@@ -190,4 +190,12 @@ export default function registerSystemSettings() {
     type: Boolean,
     default: false
   });
+
+  game.settings.register("dnd5e", "ophEdit", {
+    name: "SETTINGS.opgEdit",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: false
+  });
 }
