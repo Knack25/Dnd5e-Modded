@@ -653,7 +653,7 @@ export default class Actor5e extends Actor {
     const levels = Math.clamped(progression.slot, 0, CONFIG.DND5E.maxLevel);
     var slots = CONFIG.DND5E.SPELL_SLOT_TABLE[Math.min(levels, CONFIG.DND5E.SPELL_SLOT_TABLE.length) - 1] || [];
     if (oph){
-      const slots = CONFIG.DND5E.SPELL_SLOT_TABLE_OPHIUCHUS[Math.min(levels, CONFIG.DND5E.SPELL_SLOT_TABLE_OPHIUCHUS.length) - 1] || [];
+       slots = CONFIG.DND5E.SPELL_SLOT_TABLE_OPHIUCHUS[Math.min(levels, CONFIG.DND5E.SPELL_SLOT_TABLE_OPHIUCHUS.length) - 1] || [];
     }
     //const slots = CONFIG.DND5E.SPELL_SLOT_TABLE_OPHIUCHUS[Math.min(levels, CONFIG.DND5E.SPELL_SLOT_TABLE_OPHIUCHUS.length) - 1] || [];
     for ( let [n, lvl] of Object.entries(spells) ) {
