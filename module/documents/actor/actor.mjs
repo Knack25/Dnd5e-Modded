@@ -651,10 +651,9 @@ export default class Actor5e extends Actor {
     // Look up the number of slots per level from the progression table
     const oph = game.settings.get("dnd5e", "ophEdit");
     const levels = Math.clamped(progression.slot, 0, CONFIG.DND5E.maxLevel);
+    var slots = CONFIG.DND5E.SPELL_SLOT_TABLE[Math.min(levels, CONFIG.DND5E.SPELL_SLOT_TABLE.length) - 1] || [];
     if (oph){
       const slots = CONFIG.DND5E.SPELL_SLOT_TABLE_OPHIUCHUS[Math.min(levels, CONFIG.DND5E.SPELL_SLOT_TABLE_OPHIUCHUS.length) - 1] || [];
-    }else{
-      const slots = CONFIG.DND5E.SPELL_SLOT_TABLE[Math.min(levels, CONFIG.DND5E.SPELL_SLOT_TABLE.length) - 1] || [];
     }
     //const slots = CONFIG.DND5E.SPELL_SLOT_TABLE_OPHIUCHUS[Math.min(levels, CONFIG.DND5E.SPELL_SLOT_TABLE_OPHIUCHUS.length) - 1] || [];
     for ( let [n, lvl] of Object.entries(spells) ) {
