@@ -1054,8 +1054,8 @@ DND5E.sourcePacks = {
  * The entries of this array represent the spell slot progression for a full spell-caster.
  * @type {number[][]}
  */
-if ( !game.settings.get("dnd5e", "ophEdit") ) {
-  DND5E.SPELL_SLOT_TABLE = [
+
+  DND5E.SPELL_SLOT_TABLE_OPHIUCHUS = [
       [4, 3, 3, 3, 3, 2, 2, 1, 1],
       [4, 3, 3, 3, 3, 2, 2, 1, 1],
       [4, 3, 3, 3, 3, 2, 2, 1, 1],
@@ -1077,7 +1077,7 @@ if ( !game.settings.get("dnd5e", "ophEdit") ) {
       [4, 3, 3, 3, 3, 2, 2, 1, 1],
       [4, 3, 3, 3, 3, 2, 2, 1, 1]
     ];
-}else{
+
   DND5E.SPELL_SLOT_TABLE = [
       [2],
       [3],
@@ -1101,7 +1101,7 @@ if ( !game.settings.get("dnd5e", "ophEdit") ) {
       [4, 3, 3, 3, 3, 2, 2, 1, 1]
       
     ];
-}
+
 
 
 /* -------------------------------------------- */
