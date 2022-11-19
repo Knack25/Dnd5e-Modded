@@ -192,7 +192,7 @@ export default function registerSystemSettings() {
   });
 
   game.settings.register("dnd5e", "ophEdit", {
-    name: "SETTINGS.opgEdit",
+    name: "Ophiuchus?",
     scope: "world",
     config: true,
     type: Boolean,
